@@ -1,0 +1,9 @@
+---
+version: '3.9'
+services:
+    tradingviewtelegram:
+        build: .
+        container_name: tradingviewtelegram
+        ports:
+            - '80:80'
+        restart: unless-stopped
